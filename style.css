@@ -1,0 +1,137 @@
+/* general style info */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+h2{
+    font-weight: lighter;
+}
+
+h3{
+font-weight: lighter;
+    font-size: .8rem;
+}
+
+/* all top bar info */
+#topBar{
+    padding: 10px 20px 10px 100px;
+    display: flex;
+    background-color: rgb(107, 213, 255);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cities{
+    display: flex;
+}
+li{
+    cursor: pointer;       
+    padding: 0px 20px 0px 20px;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+}
+
+li:last-child{
+    padding-right: 100px;
+}
+
+/* current view style */
+#currentView{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 0px 10px 0px;
+    width: 730px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px black;
+    
+}
+
+#currentView h1{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+select{
+    margin-left: 7px;
+}
+
+/* Weather boxes style */
+#forecast{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.wIcons{
+    height: 125px;
+    border-radius: 50%;
+}
+
+.today, .tomorrow, .friday, .saturday{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(228, 230, 231);
+    margin: 15px 15px 15px;
+    height: 300px;
+    width: 160px;
+    border-radius: 2px;
+}
+
+
+.high, .low{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.high{
+    color: red;
+    padding-right: 3px;
+}
+
+.low{
+    padding-left: 3px;
+    color: blue;
+}
+
+#cookieJar{
+    margin: auto;
+    background-color: blanchedalmond;
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 45%;
+    width: 600px;
+    margin-top: -100px;
+    margin-left: -250px;
+    border: black 2px solid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cookieText{
+    padding: 5px 0;
+}
+
+.accept{
+    padding: 2px 5px;
+    background-color: cornflowerblue;
+    border: black 2px solid;
+    box-shadow: black 3px 3px;
+    cursor: pointer;
+}
+
+#readMore{
+    color: cornflowerblue;
+    text-decoration: underline;
+    cursor: pointer;
+}

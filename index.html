@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo-Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- All Header Info -->
+    <div id="topBar">
+        <h1>DojoWeather</h1>
+        <ul class="cities" onclick="popUp(this)">
+            <li>Burbank</li>
+            <li>Chicago</li>
+            <li>Dallas</li>
+        </ul>
+    </div>
+    
+    <!-- info above main content -->
+    <div id="currentView">
+        <h1>San Jose</h1>
+        <h3>show temperature in 
+            <select id="tempSelector" onchange="conversion(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </h3>
+    </div>
+
+    <!-- Main content box -->
+    <div id="forecast">
+
+    <!-- daily weather info -->
+        <div class="today">
+            <h2>Today</h2>
+            <img src="assets/some_rain.png" alt="some rain" class="wIcons">
+                <h3>some rain</h3>
+                <div>
+                    <span class= "high">23.9°</span>
+                    <span class= "low">18.3°</span>
+                </div>
+        </div>
+
+        <div class="tomorrow">
+            <h2>Tomorrow</h2>
+            <img src="assets/some_sun.png" alt="some sun" class="wIcons">
+                <h3>some sun</h3>
+                <div>
+                    <span class= "high">26.7°</span>
+                    <span class= "low">18.9°</span>
+                </div>
+        </div>
+
+        <div class="friday">
+            <h2>Friday</h2>
+            <img src="assets/some_clouds.png" alt="some clouds" class="wIcons">
+                <h3>some clouds</h3>
+                <div>
+                    <span class= "high">20.6°</span>
+                    <span class= "low">16.1°</span>
+                </div>
+        </div>
+
+        <div class="saturday">
+            <h2>Saturday</h2>
+            <img src="assets/some_sun.png" alt="some sun" class="wIcons">
+                <h3>some sun</h3>
+                <div>
+                    <span class= "high">25.6°</span>
+                    <span class= "low">21.1°</span>
+                </div>
+        </div>
+
+    </div>
+    <!-- close main content box -->
+    
+    <!-- cookie message! -->
+    <div id="cookieJar">
+        <img src="assets/cookie.png" alt="cookie" id="cookiePic">
+        <div class="cookieText">
+            <h2>Stop! Cookie time</h2>
+            <h3>
+                We use cookies (sadly not the edible ones) to personalize<br>
+                content and ads, to provide social media features and to<br>
+                analyse our traffic. <span id="readMore">Read more...</span>      
+            </h3>
+        </div>
+        <button class="accept" onclick="acceptThis(this)">I Accept</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
